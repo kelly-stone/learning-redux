@@ -7,6 +7,7 @@ const initialState = {
 }
 
 const user = (state = initialState, action= {} ) => {
+  //https://cn.redux.js.org/docs/advanced/AsyncActions.html(3种情况)
   switch (action.type) {
     case FETCH_USER_SUCCESS:
       return {
